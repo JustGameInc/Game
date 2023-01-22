@@ -12,7 +12,7 @@ public class LocalPlayer : Player
 
 	public Vector2 Velocity { get; set; } = Vector2.Zero;
 	
-	public Vector2 Speed { get; set; } = new Vector2(2000f, 2000f);
+	public Vector2 Speed { get; set; } = new Vector2(100f, 100f);
 	public Vector2 MaxSpeed { get; set; } = new Vector2(2000f, 2000f);
 
 	public LocalPlayer(Microsoft.Xna.Framework.Game game) : base(game)
@@ -57,9 +57,9 @@ public class LocalPlayer : Player
 		
 
 		Velocity = NormalizeVelocity(Velocity, MaxSpeed, delta);
-		Velocity = SubstractVelocity(Velocity, delta, Speed);
-
 		Position += Velocity;
+
+		Velocity = SubstractVelocity(Velocity, delta, Speed);
 
 		base.Update(gameTime);
 	}

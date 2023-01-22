@@ -12,7 +12,7 @@
 			// If you have changed target frameworks, make sure to update the program path.
 			"program": "${workspaceFolder}/Client/bin/Debug/net7.0/Client.dll",
 			"args": [],
-			"cwd": "${workspaceFolder}/Client/",
+			"cwd": "${workspaceFolder}/Client",
 			// For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
 			"console": "internalConsole",
 			"stopAtEntry": false
