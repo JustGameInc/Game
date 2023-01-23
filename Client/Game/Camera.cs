@@ -37,6 +37,6 @@ public class Camera : GameComponent
 
 	public override void Update(GameTime gameTime)
 	{
-		UpdateMatrix();
+		
 	}
 }

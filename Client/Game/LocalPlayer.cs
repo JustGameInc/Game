@@ -11,8 +11,7 @@ public class LocalPlayer : Player
 	public SpriteFont Font { get; set; }
 	public Vector2 Size { get; set;}
 	public Vector2 Velocity { get; set; } = Vector2.Zero;
-	
-	public Vector2 Speed { get; set; } = new Vector2(10f, 10f);
+    public Vector2 Speed { get; set; } = new Vector2(10f, 10f);
 	public Vector2 MaxSpeed { get; set; } = new Vector2(3000f, 3000f);
 	public Vector2 MaxWalkSpeed { get; set; } = new Vector2(50f, 50f);	
 

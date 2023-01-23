@@ -49,7 +49,8 @@ public class Game1 : Microsoft.Xna.Framework.Game
 		base.Update(gameTime);
 
 		Camera.Position = LocalPlayer.Position + LocalPlayer.Size;
-	}
+        Camera.UpdateMatrix();
+    }
 
 	protected override void Draw(GameTime gameTime)
 	{
@@ -59,6 +60,6 @@ public class Game1 : Microsoft.Xna.Framework.Game
 		base.Draw(gameTime);
 	}
 
-	public static Game.Camera GetCamera(Microsoft.Xna.Framework.Game game) => (game as Game1).Camera;
-	public static Game.LocalPlayer GetLocalPlayer(Microsoft.Xna.Framework.Game game) => (game as Game1).LocalPlayer;
+	public static Game.Camera GetCamera(Microsoft.Xna.Framework.Game game) => (game as Game1)?.Camera;
+	public static Game.LocalPlayer GetLocalPlayer(Microsoft.Xna.Framework.Game game) => (game as Game1)?.LocalPlayer;
 }
